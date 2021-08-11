@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #box {
+        width: 200px;
+        height: 200px;
+        background-color: purple;
+        margin: 50px;
+    }
+    #box1 {
+        width: 200px;
+        height: 200px;
+        background-color: purple;
+        margin: 50px;
+        font-size: 20px;
+        text-align: center;
+    }
+    #box2 {
+        display: flex;
+    }
+    .box1, .box2, .box3 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        margin: 20px;
+    }
+    li {
+        padding: 5px;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <div class="container">
+    <h2>Task1</h2>
+    <div id="box"></div>
+    <h2>Task2</h2>
+    <div id="box1">у мене є секрет</div>
+    <h2>Task3</h2>
+    <div id="box2">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <h2>Task4</h2>
+    <div id="box3">
+        <ol>
+            <li onclick="changeTextColor()">orange</li>
+            <li onclick="changeTextColor()">red</li>
+            <li onclick="changeTextColor()">green</li>
+            <li onclick="changeTextColor()">blue</li>
+            <li onclick="changeTextColor()">brown</li>
+            <li onclick="changeTextColor()">grey</li>
+        </ol>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
